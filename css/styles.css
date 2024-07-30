@@ -1,0 +1,167 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(214, 214, 214);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 400px;
+}
+
+.li-container,
+.li-container-completed,
+.li-container-deleted {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.li-container-completed li {
+    background-color: lightgreen;
+
+    & .btn-done {
+        display: none;
+    }
+}
+
+.li-container-deleted li {
+    background-color: lightcoral;
+
+    & .btn-delete {
+        display: none;
+    }
+
+}
+
+li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+}
+
+.btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+.btn-done {
+    margin-left: auto;
+    border: none;
+    background-color: #1ee317;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+}
+
+.btn-done:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+.btn-edit {
+    margin-left: auto;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+}
+
+.btn-edit:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+.btn-add {
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: teal;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+.empty {
+    color: darkslategrey;
+}
