@@ -14,6 +14,7 @@ Adicionalmente hemos anidado el texto "All tasks are completed" en un <div> para
 
 Fichero index.HTML:
 
+´´´
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,9 +45,11 @@ Fichero index.HTML:
     <script src="./main.js"></script>
 </body>
 </html>
+´´´
 
 Fichero styles.css:
 
+´´´
 body {
     margin: 0;
     padding: 0;
@@ -151,6 +154,7 @@ body {
   .empty {
     color: darkslategrey;
   }
+  ´´´
 
 Ahora el reto está en vuestras manos dándole la funcionalidad apropiada a este TODO List a través del fichero main.js.
 
